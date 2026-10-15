@@ -1,50 +1,50 @@
 import React from 'react'
+import Image1 from "../../assets/Men/images1.png";
+import Image2 from "../../assets/Men/imag2.png";
+import Image3 from "../../assets/Men/imag3.png";
+import Image4 from "../../assets/Men/imag4.png";
+import Image5 from "../../assets/Men/imag5.png";
+import { FaStar } from "react-icons/fa";
 
 const ProductsData =[
     {
       id: 1,
-      image: "",
-      author: "brown_pen",
-      title: "Goggles",
+      image: Image1,
+      color: "blue",
+      title: "T-shirts",
       rating: 4.2,
-      aosDelay: "0",
         
     },
     {
       id: 2,
-      image: "",
-      author: "orange",
+      image: Image2,
+      color: "teal",
       title: "Printed T-shirt",
       rating: 4.2,
-      aosDelay: "0",
         
     },
     {
       id: 3,
-      image: "",
-      author: "green_pen",
+      image: Image3,
+      color:"peach",
       title: "Fashion T-shirt",
       rating: 4.2,
-      aosDelay: "0",
         
     },
     {
       id: 4,
-      image: "",
-      author: "black_pen",
-      title: "Wireless Headphone",
+      image: Image4,
+      color: "olive",
+      title: "Fashion Jacket",
       rating: 4.2,
-      aosDelay: "0",
         
     },
     {
       id: 5,
-      image: "",
-      author: "white_pen",
+      image: Image5,
+      color: "navy",
       title: "Women Ethnic",
-      rating: 4.2,
-      aosDelay: "0",
-        
+      rating: 4.2,       
     },
 ]
 const products = () => {
@@ -62,24 +62,39 @@ const products = () => {
             </p>
     </div>  
     <div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
-                    lg:grid-cols-4 gap-10 place-items-center'>
-                        {ProductsData.map((item)=>{  
-                           <div>
-                            <img src={item.image}
-                             alt="" 
-                             className='h-[220px] w-[150px]
-                             object-cover rounded-md'/>
-                             <div className='py'>
-                                <h2 className='text-sm font-semibold'>{item.title}</h2>
-                                <p className='text-xs text-gray-500'>{item.author}</p>
+       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 place-items-center">
+        {ProductsData.map((data) => (
+          
+          <div
+            key={data.id}
+            className="rounded-md p-3 relative overflow-hidden"
+            style={{backgroundColor:data.color}} 
+             data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="500" 
+          >
+            <img  
+              src={data.image}
+              alt={data.title}
+              className="h-[220px] w-[150px] object-cover rounded-md"
+            />
 
-                             </div>
+            <h3 className="font-semibold text-sm mt-2 text-center">
+              {data.title}
+            </h3>
 
-                           </div>
-                        })}
-        </div>
-     </div>
+            <p className="text-sm text-gray-900 text-center">
+              {data.color}
+            </p> 
+
+            <div className="flex items-center justify-center gap-1">
+              <FaStar className="text-yellow-400" />
+              <span className="text-sm">{data.rating}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
     </div>  
   )
 }

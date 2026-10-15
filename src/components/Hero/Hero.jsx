@@ -52,12 +52,28 @@ const Hero = () => {
             <div key={data.id}>
               <div className='grid grid-cols-1 sm:grid-cols-2'>
                 <div className='order-2 relative z-10 flex flex-col justify-center gap-4 pl-5 pt-12 text-center sm:order-1 sm:pl-0 sm:pt-0 sm:text-left'>
-                  <h1 className='text-5xl font-bold sm:text-6xl lg:text-7xl'>
+                  <h1 
+                  data-aos="zoom-out"
+                  data-aos-delay="100"
+                  data-aos-duration="500" 
+                  data- aos-once="true"  
+                  className='text-5xl font-bold sm:text-6xl lg:text-7xl'>
                     {data.title}
                   </h1>
-                  <p className='text-sm'>{data.description}</p>
-                  <div>
-                    <button className='rounded-full bg-gradient-to-r from-primary to-secondary px-4 py-2 text-white duration-200 hover:scale-105'>
+                  <p 
+                  data-aos="zoom-out"
+                  data-aos-delay="100"
+                  data-aos-duration="500"
+                  data- aos-once="true"   
+                  className='text-sm'>{data.description}</p>
+                  <div
+                  data-aos="zoom-out"
+                  data-aos-delay="100"
+                  data-aos-duration="500" 
+                  data- aos-once="true"   
+                  >
+                    <button className='rounded-full bg-gradient-to-r
+                     from-primary to-secondary px-4 py-2 text-white duration-200 hover:scale-105'>
                       Order Now
                     </button>
                   </div>
@@ -68,7 +84,12 @@ const Hero = () => {
                     <img
                       src={data.img}
                       alt={data.title}
-                      className='mx-auto h-[500px] w-[500px] object-contain sm:h-[450px] sm:scale-125'
+                      className='mx-auto h-[500px] w-[500px] 
+                      object-contain sm:h-[450px] sm:scale-125'
+                       data-aos="zoom-out"
+                      data-aos-delay="100"
+                      data-aos-duration="500" 
+                      data- aos-once="true"   
                     />
                   </div>
                 </div>
