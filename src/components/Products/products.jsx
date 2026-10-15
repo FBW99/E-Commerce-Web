@@ -64,7 +64,7 @@ const products = () => {
     <div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
                     lg:grid-cols-4 gap-10 place-items-center'>
-                        {productData.map((item)=>{
+                        {ProductsData.map((item)=>{  
                            <div>
                             <img src={item.image}
                              alt="" 
@@ -73,7 +73,7 @@ const products = () => {
                              <div className='py'>
                                 <h2 className='text-sm font-semibold'>{item.title}</h2>
                                 <p className='text-xs text-gray-500'>{item.author}</p>
-                                    
+
                              </div>
 
                            </div>
