@@ -233,15 +233,15 @@ const Footer = () => {
             <ul className="space-y-2.5 text-xs text-gray-400">
               <li className="flex items-start gap-2.5">
                 <FaLocationDot className="text-primary mt-0.5 shrink-0 text-sm" />
-                <span>124 Fashion Ave, Suite 500, New York, NY 10018</span>
+                <span>124 Fashion St, Bole, Addis Ababa, Ethiopia</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <FaPhone className="text-primary shrink-0 text-sm" />
-                <span>+1 (800) 555-SHOPS</span>
+                <span>+2519-1234-5678</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <FaEnvelope className="text-primary shrink-0 text-sm" />
-                <span>support@myshops.com</span>
+                <span>[EMAIL_ADDRESS]</span>
               </li>
               <li className="flex items-center gap-2.5 pt-1 text-emerald-400">
                 <FaShieldHalved className="shrink-0 text-sm" />
@@ -253,7 +253,7 @@ const Footer = () => {
         </div>
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <div>
-            © 2026 MyShops Inc. All rights reserved. Built with precision and passion.
+            © 2026 MyShops Inc. All rights reserved. Built with love by Faruk
           </div>
           <div className="flex items-center gap-3 text-2xl text-gray-400">
             <FaCcVisa className="hover:text-white transition-colors" title="Visa" />
