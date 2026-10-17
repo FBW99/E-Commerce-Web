@@ -5,9 +5,63 @@
 @theme {
   --color-primary: #fea928;
   --color-secondary: #ed8900;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 @utility container {
   margin-inline: auto;
-  padding-inline: 1rem;
+  padding-inline: 1.25rem;
+  max-width: 1280px;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.slick-dots li button:before {
+  color: #fea928 !important;
+  opacity: 0.35 !important;
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fea928 !important;
+  opacity: 1 !important;
+  font-size: 12px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #fea928 !important;
+  font-size: 24px !important;
+}
+@keyframes bounceShort {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-short {
+  animation: bounceShort 0.8s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(254, 169, 40, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(254, 169, 40, 0.8);
 }
