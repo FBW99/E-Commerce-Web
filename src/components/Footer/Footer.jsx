@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../assets/website/image.png';
+import { useCart } from '../../context/useCart';
 import {
   FaInstagram,
   FaFacebookF,
@@ -15,11 +16,10 @@ import {
   FaCcPaypal,
   FaCcApplePay,
 } from 'react-icons/fa6';
-import { useCart } from '../../context/useCart';
 
 const Footer = () => {
   const { setSelectedCategory } = useCart();
-
+  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -233,15 +233,15 @@ const Footer = () => {
             <ul className="space-y-2.5 text-xs text-gray-400">
               <li className="flex items-start gap-2.5">
                 <FaLocationDot className="text-primary mt-0.5 shrink-0 text-sm" />
-                <span>124 Fashion St, Bole, Addis Ababa, Ethiopia</span>
+                <span>124 Fashion FB, Shashamene, Oromia, Ethiopia</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <FaPhone className="text-primary shrink-0 text-sm" />
-                <span>+2519-1234-5678</span>
+                <span>+2519-5154-4310</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <FaEnvelope className="text-primary shrink-0 text-sm" />
-                <span>[EMAIL_ADDRESS]</span>
+                <span>farukbati8@gmail.com</span>
               </li>
               <li className="flex items-center gap-2.5 pt-1 text-emerald-400">
                 <FaShieldHalved className="shrink-0 text-sm" />
